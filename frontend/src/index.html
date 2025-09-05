@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal</title>
-    <script type="module" src="script.mjs"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="script.mjs"></script>
+    <link rel="stylesheet" href="stylo.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Bem-vindo ao Portal</h1>
-    <button onclick="funcao()"> Clique aqui</button>
+    <header>
+        <h1>Bem-vindo ao Portal</h1>
+    </header>
+    <main>
+        <form>
+            <div class="form">
+                <label for="numero1">Primeiro numero</label>
+                <input type="number" id="numero1">
+                
+            </div>
+            <div class="form">
+                <label for="numero2">Primeiro numero</label>
+                <input type="text" id="numero2">
+                
+            </div>
+            <div class="form">
+                <button onclick="funcao()"> Clique aqui</button>
+            </div>
+        </form>
+    </main>
+    
 </body>
 
 </html>

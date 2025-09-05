@@ -1,13 +1,35 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: black;
-  margin: 0;
-  padding: 20px;
+@charset "UTF-8";
+:root{
+    --c1 : #071C26;
+    --c2 : #7195A6;
+    --c3 : #B0C6D0;
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(223, 223, 223);
+    min-height: 80vh;
 
-/* Styling the heading */
-h1 {
-  color: #2c3e50;
+}
+header{
+    display: flex;
+    background-color: var(--c1);
+    padding: 20px;
+    text-align: center;
+    color: var(--c3);
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+header h1 {
+
+    text-align: center;
+    margin: auto;
+}
+main{
   text-align: center;
-  background-color: black;
+  margin: auto;
+  
 }
