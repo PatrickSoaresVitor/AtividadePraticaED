@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Styling the heading */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  background-color: black;
+}
