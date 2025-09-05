@@ -10,3 +10,24 @@
     
 }*/
 
+//import { dados } from "../../arquivo/dados.mjs"
+
+//NOME; RA;IDADE; SEXO; MÉDIA e RESULTADO
+
+let dados = []
+
+let nome = prompt("Digite seu nome: ")
+let ra = prompt("Digite seu RA: ")
+let idade = prompt("Digite sua idade: ")
+let media = prompt("Digite sua média: ")
+let resultado = prompt("Digite seu resultado: ")
+
+dados.push({
+    nome: nome,
+    ra: ra,
+    idade: idade,
+    media: media,
+    resultado: resultado
+})
+
+console.log(dados)
