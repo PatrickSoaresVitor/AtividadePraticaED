@@ -1,4 +1,4 @@
-function funcao(){
+/*function funcao(){
     let numero1 = Number(document.getElementById("numero1").value)
     let numero2 = (document.getElementById("numero2").value)
     let sub = numero1
@@ -8,4 +8,5 @@ function funcao(){
     alert(`A subtração é ${sub}`)
     alert(`A subtração é ${sub2}`)
     
-}
+}*/
+
