@@ -1,3 +1,5 @@
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
 /*function funcao(){
     let numero1 = Number(document.getElementById("numero1").value)
     let numero2 = (document.getElementById("numero2").value)
