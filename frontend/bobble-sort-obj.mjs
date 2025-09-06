@@ -1,23 +1,3 @@
-/*function bubblesort (vetor, fnComp){
-    let trocou
-    do{
-        trocou = false
-        //percorrendo o vetor 
-        for(let i= 0; i < vetor.length -1; i++){
-            //se a posiçao i for maior que a proxima possição (i+1)
-            if(fnComp(vetor[i], vetor[i+1])){
-                // troca a sequencia de i, i+1 para i+1, i
-                [vetor [i], vetor [i+1]] = [vetor[i+1], vetor[i]]
-                
-                trocou = true   
-            }
-        }
-    }while(trocou)
-}
-
-import { objMotoristas} from ".data/motoristas-obj-desord.mjs"
-console.time("Tempo de Ordenação")
-bubblesort(objMotoristas, (elem1, elem2) => elem1.nome_motorista > elem2.nome_motorista)*/
 export function bubbleSort(vetor, fnComp) {
     let trocou;
   
@@ -32,11 +12,11 @@ export function bubbleSort(vetor, fnComp) {
     } while (trocou);
   }
   
-  // import { objMotoristas } from "./data/motoristas-obj-desord.mjs"
-  
-  // console.time("Tempo de ordenação");
-  // bubbleSort(objMotoristas, (elem1, elem2) => 
-  //     elem1.nome_motorista > elem2.nome_motorista);
-  // console.timeEnd("Tempo de ordenação");
-  
-  // console.log(objMotoristas)
+  import { dados } from '../arquivo/dados.mjs';
+
+  console.time("Tempo de ordenação");
+  bubbleSort(dados, (elem1, elem2) => 
+      elem1.nome > elem2.nome);
+  console.timeEnd("Tempo de ordenação");
+
+  console.log(dados);
