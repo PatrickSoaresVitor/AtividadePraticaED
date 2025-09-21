@@ -1,6 +1,4 @@
-# Atividade Prática ED – JS (Versão Web, mesma estrutura de pastas)
-Este pacote reproduz a MESMA estrutura do seu projeto, porém adaptado para rodar no **navegador** (web),
-mantendo os **algoritmos de ordenação manuais** (sem `Array.sort()`), conforme o enunciado.
+# Atividade Prática ED – JS
 
 ## Estrutura
 AtividadePraticaED/
