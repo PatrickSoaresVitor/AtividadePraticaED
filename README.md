@@ -1,5 +1,8 @@
 # Atividade Prática ED – JS
 
+## Criadores
+Pablo Vitor e Patrick Vitor
+
 ## Estrutura
 AtividadePraticaED/
 
