@@ -1,22 +1,20 @@
-export function bubbleSort(vetor, fnComp) {
-    let trocou;
-  
-    do {
-      trocou = false;
-      for (let i = 0; i < vetor.length - 1; i++) {
-        if (fnComp(vetor[i] , vetor[i + 1])) {
-          [vetor[i], vetor[i + 1]] = [vetor[i + 1], vetor[i]];
-          trocou = true;
-        }
-      }
-    } while (trocou);
+// bubble-sort (objetos) – implementado manualmente, sem Array.sort()
+// Exporta uma função genérica que recebe uma lista e um comparador.
+// O comparador deve retornar > 0 quando a > b, < 0 quando a < b, 0 se igual.
+export function bubbleSortObj(list, compareFn){
+  if (typeof compareFn !== "function") {
+    throw new TypeError("compareFn deve ser uma função (a, b) => number");
   }
-  
-  import { dados } from '../arquivo/dados.mjs';
-
-  console.time("Tempo de ordenação");
-  bubbleSort(dados, (elem1, elem2) => 
-      elem1.nome > elem2.nome);
-  console.timeEnd("Tempo de ordenação");
-
-  console.log(dados);
+  const arr = list.map(x => ({...x})); // cópia rasa para não mutar a lista original
+  const n = arr.length;
+  for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - i - 1; j++) {
+      if (compareFn(arr[j], arr[j + 1]) > 0) {
+        const tmp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = tmp;
+      }
+    }
+  }
+  return arr;
+}
